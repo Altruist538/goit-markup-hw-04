@@ -141,9 +141,14 @@ address {
 .hero {
 	box-sizing: border-box;
 	text-align: center;
-	background-color: var(--firma-background-color);
+	/* background-color: var(--firma-background-color); */
+
 	padding-top: 188px;
 	padding-bottom: 188px;
+	background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7), 100%, rgba(46, 47, 66, 0.7) 100%),
+		url(../images/people-office.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .hero-caption {
