@@ -140,17 +140,19 @@ address {
 	margin-left: auto;
 }
 /* ---- /header ---- */
+/* ---- hero ---- */
 .hero {
-	box-sizing: border-box;
 	text-align: center;
-	/* background-color: var(--firma-background-color); */
-
 	padding-top: 188px;
 	padding-bottom: 188px;
 	background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7), 100%, rgba(46, 47, 66, 0.7) 100%),
 		url(../images/people-office.jpg);
+	max-width: 1440px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-size: cover;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: var(--firma-background-color);
 }
 
 .hero-caption {
@@ -192,6 +194,8 @@ address {
 	margin-left: auto;
 	margin-right: auto;
 }
+/* ---- /hero ---- */
+/* ---- Properties section ---- */
 .block-items {
 	width: calc((100%-72px) / 4);
 }
@@ -224,6 +228,8 @@ address {
 	letter-spacing: 0.02em;
 	color: var(--text-color);
 }
+/* ---- /Properties section ---- */
+/* ---- What are we doing section ---- */
 .section-what {
 	padding-top: 0px;
 }
@@ -243,6 +249,8 @@ address {
 	display: flex;
 	gap: 24px;
 }
+/* ---- /What are we doing section ---- */
+/* ---- Our Team section ---- */
 .team-blok-text {
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -315,12 +323,16 @@ address {
 .team-social-link:focus {
 	background-color: var(--hero-btn-color);
 }
-
+/* ---- /Our Team section ---- */
 .hero-portfolio-btn:hover,
 .hero-portfolio-btn:focus {
 	cursor: pointer;
-	background-color: var(--firma-color);
+	background-color: var(--hero-btn-color);
+	border: 1px solid var(--hero-btn-color);
+	border-radius: 4px;
 	color: var(--white-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
 }
 
 .hero-caption {
@@ -385,11 +397,19 @@ address {
 	row-gap: 48px;
 	column-gap: 24px;
 }
+
+.cards-portfolio-content:hover,
+.cards-portfolio-content:focus {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .cards-portfolio-list {
 	padding: 32px 16px;
 	border: 1px solid var(--white-text-footer);
 	border-top: 0;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .title-customers {
 	box-sizing: border-box;
 	text-align: center;
@@ -429,7 +449,7 @@ address {
 	justify-content: center;
 	gap: 24px;
 }
-
+/* ---- footer----*/
 .block-footer {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -486,3 +506,4 @@ address {
 .footer-social-link:focus {
 	background-color: var(--icon-salat);
 }
+/* ---- /footer----*/
